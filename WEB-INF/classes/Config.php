@@ -13,7 +13,7 @@ class Config {
 
 	public static function init() {
 		
-		Config::$destroy_path = "http://".$_SERVER["HTTP_HOST"]."/destroy.php";
+		Config::$destroy_path = "http://".$_SERVER["HTTP_HOST"]."/lexicon/destroy.php";
 		//Config::$USER = isset($_SERVER["REMOTE_USER"])?$_SERVER["REMOTE_USER"]:(isset($_SERVER["REDIRECT_REMOTE_USER"])?$_SERVER["REDIRECT_REMOTE_USER"]:NULL);
 		Config::$USER = isset($_SESSION["user_id"])?$_SESSION["user_id"]:NULL;
 		Config::$CONTENT_LANG = Config::$DEFAULT_LANG;
