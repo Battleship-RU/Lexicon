@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Схема входных данных (запроса) -->
+<xsd:schema elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="urn:ru:battleship:lexicon:getwordresponse"
+	targetNamespace="urn:ru:battleship:lexicon:getwordresponse">
+
+<xsd:element name="getwordresponse">
+	<xsd:complexType>
+		<xsd:annotation>
+			<xsd:documentation>Возвращает описание слова</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="user" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="word" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="total" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="today" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="true" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="false" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="cum" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="used" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="lastmodified" type="xsd:integer" minOccurs="1"/>
+			<xsd:element name="images" type="xsd:anyType" minOccurs="0"/>
+			<xsd:element name="primary" type="xsd:anyType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Схема входных данных (запроса) -->
+<xsd:schema elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="urn:ru:battleship:lexicon:getwordrequest"
+	targetNamespace="urn:ru:battleship:lexicon:getwordrequest">
+
+<xsd:element name="getwordrequest">
+	<xsd:complexType>
+		<xsd:annotation>
+			<xsd:documentation>Получить новое слово для обучения</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="word" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="result" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="drop" type="xsd:boolean" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

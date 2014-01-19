@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Схема входных данных (запроса) -->
+<xsd:schema elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="urn:ru:battleship:lexicon:getuserstatrequest"
+	targetNamespace="urn:ru:battleship:lexicon:getuserstatrequest">
+
+<xsd:element name="getuserstatrequest">
+	<xsd:complexType>
+		<xsd:annotation>
+			<xsd:documentation>Получить статистику по пользователю</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="user" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
