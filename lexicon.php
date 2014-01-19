@@ -3,7 +3,6 @@ require_once("WEB-INF/conf/session.php");
 require_once("WEB-INF/conf/conf.php");
 
 getWord();
-//print_r($_SESSION);exit;
 
 /**
  * Подбирает новое слово для изучения
